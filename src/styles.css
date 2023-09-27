@@ -1,0 +1,254 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #020313;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  max-width: 80vw;
+  margin: 0 auto;
+  color: #bc13fe;
+}
+
+.machine {
+  height: 40rem;
+  width: 60%;
+  margin: 0 auto;
+  border: 10px solid#7FFFD4;
+  background-color: #000000;
+  color: #7fffd4;
+  font-size: 2em;
+}
+
+#games-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  & a {
+    padding: 0.5em;
+  }
+}
+
+.games-div {
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-imgs {
+  width: 10em;
+  height: 5em;
+}
+
+.buttons-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-buttons {
+  background: none;
+  font-size: 5em;
+  border: none;
+  color: #bc13fe;
+  cursor: pointer;
+}
+
+.winner-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 4em;
+  font-weight: bold;
+  height: 100%;
+}
+
+.pig-buttons {
+  border: 10px solid indigo;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  cursor: pointer;
+}
+
+.pig-buttons > span {
+  font-size: 4em;
+}
+
+#roll-button {
+  background-color: green;
+}
+
+#hold-button {
+  background-color: red;
+}
+
+#pong-player-div {
+  position: absolute;
+  top: 11em;
+  left: 20em;
+  transform: translate(-50%, -50%);
+}
+
+#pong-computer-div {
+  position: absolute;
+  top: 11em;
+  left: 29em;
+  transform: translate(50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.6em;
+    height: 7em;
+  }
+  .machine {
+    width: 90%;
+    height: 28rem;
+    border: 8px solid#7FFFD4;
+  }
+  #games-grid {
+    font-size: 0.7em;
+    & a {
+      padding: 0.6em;
+    }
+  }
+  .top-buttons {
+    font-size: 3em;
+  }
+  .winner-message {
+    font-size: 2em;
+    font-weight: bold;
+    height: 100%;
+  }
+  .games-div {
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-top: 0.5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .welcome-imgs {
+    width: 4em;
+    height: 3em;
+  }
+
+  .pig-buttons {
+    border: 5px solid indigo;
+    width: 5em;
+    height: 5em;
+  }
+
+  .pig-buttons > span {
+    font-size: 1.5em;
+  }
+  #pong-player-div {
+    font-size: 0.5em;
+    position: absolute;
+    top: 13em;
+    left: 5em;
+    transform: translate(-50%, -50%);
+  }
+
+  #pong-computer-div {
+    font-size: 0.5em;
+    position: absolute;
+    top: 13em;
+    left: 6em;
+    transform: translate(50%, -50%);
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .header {
+    font-size: 1em;
+    height: 2.5em;
+  }
+  .machine {
+    font-size: 1.5em;
+    width: 90%;
+    height: 16rem;
+  }
+  #games-grid {
+    font-size: 0.7em;
+    & a {
+      padding: 0.2em;
+    }
+  }
+  .top-buttons {
+    font-size: 2em;
+  }
+  .games-div {
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-top: 0.3em;
+  }
+
+  .welcome-imgs {
+    width: 7em;
+    height: 3em;
+  }
+  #pong-player-div {
+    font-size: 1em;
+    position: absolute;
+    top: 3em;
+    left: 7em;
+    transform: translate(-50%, -50%);
+  }
+
+  #pong-computer-div {
+    font-size: 1em;
+    position: absolute;
+    top: 3em;
+    left: 12.3em;
+    transform: translate(50%, -50%);
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) and (orientation: landscape) {
+  .header {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    height: 4em;
+  }
+  .machine {
+    font-size: 3em;
+    width: 90%;
+    height: 32rem;
+  }
+  #games-grid {
+    font-size: 0.8em;
+    & a {
+      padding: 1.5em;
+    }
+  }
+  #pong-player-div {
+    position: absolute;
+    top: 5em;
+    left: 5.5em;
+    transform: translate(-50%, -50%);
+  }
+
+  #pong-computer-div {
+    position: absolute;
+    top: 5em;
+    left: 7em;
+    transform: translate(50%, -50%);
+  }
+}
