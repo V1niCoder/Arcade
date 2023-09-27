@@ -120,14 +120,14 @@ export default function PongGame() {
         ballDraw.speedX < 0 &&
         ballDraw.x - ballDraw.radius < 0
       ) {
-        setComputerScore((prevScore) => prevScore + 0.5);
+        setComputerScore((prevScore) => prevScore + 1);
         resetBall();
       } else if (
         ballDraw.x >= canvas.width &&
         ballDraw.speedX > 0 &&
         ballDraw.x + ballDraw.radius > canvas.width
       ) {
-        setLeftPlayerScore((prevScore) => prevScore + 0.5);
+        setLeftPlayerScore((prevScore) => prevScore + 1);
         resetBall();
       }
     };
