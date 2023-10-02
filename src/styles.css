@@ -252,3 +252,52 @@ body {
     transform: translate(50%, -50%);
   }
 }
+
+@media (min-width: 800px) and (max-width: 1400px) {
+  .header {
+    font-size: 3em;
+    height: 3em;
+  }
+  .machine {
+    font-size: 2em;
+    width: 70%;
+    height: 37.5rem;
+  }
+  #pong-player-div {
+    position: absolute;
+    top: 6em;
+    left: 12em;
+    transform: translate(-50%, -50%);
+  }
+
+  #pong-computer-div {
+    position: absolute;
+    top: 6em;
+    left: 23em;
+    transform: translate(50%, -50%);
+  }
+}
+
+@media (min-width: 1000px) and (max-height: 800px) {
+  .header {
+    font-size: 2.5em;
+    height: 3em;
+  }
+  .machine {
+    font-size: 1.8em;
+    width: 80%;
+    height: 35rem;
+  }
+  #pong-player-div {
+    position: absolute;
+    top: 7em;
+    left: 10em;
+    transform: translate(-50%, -50%);
+  }
+  #pong-computer-div {
+    position: absolute;
+    top: 7em;
+    left: 17em;
+    transform: translate(50%, -50%);
+  }
+}
